@@ -15,6 +15,15 @@ test("normalize URL trailing slash", () => {
     expect(actual).toEqual(expected);
 })
 
+test("normalize URL capitals", () => {
+    const input =  "https://RAIVEN.raiven.com/path/"
+    const actual = normalizeURL(input)
+    const expected = "raiven.raiven.com/path"
+    expect(actual).toEqual(expected);
+})
+
+
+
 test("normalize URL strip http", () => {
     const input =  "http://Raiven.com/path/"
     const actual = normalizeURL(input)
