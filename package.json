@@ -1,0 +1,24 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/JohnRaivenOlazo/web-crawler#readme",
+  "bugs": {
+    "url": "https://github.com/JohnRaivenOlazo/web-crawler/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnRaivenOlazo/web-crawler.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node crawl.js"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
+}
