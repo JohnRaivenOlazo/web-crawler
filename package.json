@@ -16,7 +16,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "start": "node crawl.js"
+    "start": "node main.js"
   },
   "devDependencies": {
     "jest": "^30.0.4"

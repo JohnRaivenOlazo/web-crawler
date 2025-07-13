@@ -1,3 +1,18 @@
-const string = "qwehgd"
+const { crawlPage } = require("./crawl.js") 
 
-console.log(string.slice(0))
+const main = () => {
+    if( process.argv.length < 3){
+        console.log("no website provided")
+        process.exit(1)
+    }
+    if (process.argv.length > 3){
+        console.log("too many command line args")
+        process.exit(1)
+    }
+    
+    const baseURL = process.argv[2]
+    console.log("starting crawling of", baseURL)
+    crawlPage(baseURL)
+}
+
+main()
